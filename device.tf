@@ -7,7 +7,9 @@ terraform {
   }
 }
 
-resource "logicmonitor_device" "my_device"{
+# Create a LogicMonitor device
+resource "logicmonitor_device" "my_device" {
+ 
   custom_properties = [
         {
             name = "addr"
@@ -15,12 +17,12 @@ resource "logicmonitor_device" "my_device"{
         },
         {
             name = "host"
-              value = "terrafrom test"
+              value = "terraform"
         }
     ]
   description = "This is a test device"
   device_type = 0
   disable_alerting = true
-  display_name = "Cisco Router"
-  enable_netflow = true
+  display_name = "TEST DEVICE"
+  related_device_id = -1
 }
