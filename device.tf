@@ -24,5 +24,8 @@ resource "logicmonitor_device" "my_device" {
   device_type = 0
   disable_alerting = true
   display_name = "TEST DEVICE"
+  name = "collector.localhost"
+  netflow_collector_id = 1
+  preferred_collector_id = 2
   related_device_id = -1
 }
