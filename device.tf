@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-resource "logicmonitor_device" {
+resource "logicmonitor_device" "my_device"{
   custom_properties = [
         {
             name = "addr"
