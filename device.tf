@@ -7,9 +7,7 @@ terraform {
   }
 }
 
-resource "logicmonitor_device" "my_device" {
-  auto_balanced_collector_group_id = 0
-  current_collector_id = 1
+resource "logicmonitor_device" {
   custom_properties = [
         {
             name = "addr"
@@ -25,10 +23,4 @@ resource "logicmonitor_device" "my_device" {
   disable_alerting = true
   display_name = "Cisco Router"
   enable_netflow = true
-  host_group_ids = "16,4,3"
-  link = "www.ciscorouter.com"
-  name = "collector.localhost"
-  netflow_collector_id = 1
-  preferred_collector_id = 2
-  related_device_id = -1
 }
