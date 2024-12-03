@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    logicmonitor = {
+      source  = "logicmonitor/logicmonitor"
+      version = "desired_version"  # specify a version if needed
+    }
+  }
+}
+
 resource "logicmonitor_device" "my_device" {
   auto_balanced_collector_group_id = 0
   current_collector_id = 1
