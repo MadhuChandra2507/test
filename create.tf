@@ -3,12 +3,6 @@ terraform {
     logicmonitor = {
       source  = "logicmonitor/logicmonitor"
       version = "2.0.18"  # specify a version if needed
-      provider "logicmonitor" {
-          api_id = var.logicmonitor_api_id
-          api_key = var.logicmonitor_api_key
-          company = var.logicmonitor_company
-          bulk_resource = true //optional//
-  }
     }
   }
 }
