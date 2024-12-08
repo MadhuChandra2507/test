@@ -16,7 +16,7 @@ variable "logicmonitor_api_key" {
   description = "LogicMonitor API Key"
   type        = string
   default     = "" 
-
+}
 variable "logicmonitor_company" {
   description = "LogicMonitor company subdomain"
   type        = string
