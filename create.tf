@@ -30,8 +30,4 @@ provider "logicmonitor" {
 # create a new LogicMonitor device
 resource "logicmonitor_device_group" "group1" {
     name = "TerraformTEST"
-    properties = {
-     "jmx.port" = "9003"
-     "system.categories" = "ec2"
-    }
 }
