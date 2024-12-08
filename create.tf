@@ -25,7 +25,7 @@ variable "logicmonitor_company" {
 provider "logicmonitor" {
   api_id = var.logicmonitor_api_id
   api_key = var.logicmonitor_api_key
-  company = var.logicmonitor_company
+  company = "festo"
 }
 # create a new LogicMonitor device
 resource "logicmonitor_device_group" "group1" {
