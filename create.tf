@@ -6,7 +6,11 @@ terraform {
     }
   }
 }
-
+provider "logicmonitor" {
+  api_id = var.logicmonitor_api_id
+  api_key = var.logicmonitor_api_key
+  company = var.logicmonitor_company
+}
 # create a new LogicMonitor device
 resource "logicmonitor_device" "my_device" {
       description = "TEST"
