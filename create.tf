@@ -23,8 +23,8 @@ variable "logicmonitor_company" {
   default     = "festo"  
 }
 provider "logicmonitor" {
-  api_id = "jbUw7JqkB4Mh7z9J6D37"
-  api_key = "lma_3{xWk7dx7_9PD5)9dM~ETM2y}4C^cZn9425G(}{M9%c2Q35h8V52](nF5~fELYjQ2MzQ0YTUtYzdkOS00NjUyLWJkYjktODczODg2NTczODQ1L1rYenz"
+  api_id = ""
+  api_key = ""
   company = "festo"
 }
 # create a new LogicMonitor device
