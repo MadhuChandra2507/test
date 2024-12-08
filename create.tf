@@ -20,7 +20,7 @@ variable "logicmonitor_api_key" {
 variable "logicmonitor_company" {
   description = "LogicMonitor company subdomain"
   type        = string
-  default     = ""  
+  default     = "festo"  
 }
 provider "logicmonitor" {
   api_id = var.logicmonitor_api_id
