@@ -28,9 +28,10 @@ provider "logicmonitor" {
   company = var.logicmonitor_company
 }
 # create a new LogicMonitor device
-resource "logicmonitor_device" "my_device" {
-      description = "TEST"
-      display_name = "Terraform"
-      name = "collector.localhost"
-      preferred_collector_id = 2
+resource "logicmonitor_device_group" "group1" {
+    name = "TerraformTEST"
+    properties = {
+     "jmx.port" = "9003"
+     "system.categories" = "ec2"
+    }
 }
